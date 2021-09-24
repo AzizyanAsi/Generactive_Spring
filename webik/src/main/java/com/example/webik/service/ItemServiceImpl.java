@@ -6,10 +6,11 @@ import com.example.webik.repository.ItemHibernateRepo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
-
+@Component
 public class ItemServiceImpl implements ItemService{
     private final ItemHibernateRepo itemRepository;
     private final BasketRepo basketRepository;

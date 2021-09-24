@@ -24,7 +24,7 @@ import static com.example.webik.util.HttpConstants.CONTENT_TYPE_JSON;
 @WebServlet(name = "ItemsServlet", urlPatterns = "/item/*")
 public class ItemServlet extends HttpServlet {
     public static final String PARAM_TYPE = "type";
-    ;
+
     private final ItemService itemService = ApplicationContainer
             .context.getBean(ItemService.class);
 
